@@ -1,0 +1,8 @@
+Mode d'emploi:
+
+     Sans joindre d'argument à l'executable le programme va chercher a predire les caracteres d'un lot par defaut d'images (issue du dossier "LOT_CHIFFRES_1" ou du dossier "LOT_CHIFFRES_2"). Nous avons créé ces derniers sans particulierement chercher a avoir de bons scores. Le lot "LOT_CHIFFRES_1" est bien prédit à 100%, le lot "LOT_CHIFFRES_2" est bien prédit a 70%. Nous avons generalement des resultats entre 50% et 100%. Un critères semblant avoir une forte influence est l'épaisseur du trait. Nous aurions aimé avec plus de temps pouvoir normaliser encore plus les images (et a fortiori travailler sur de vraies photos et non des caracteres exclusivement blanc sur fond noir) pour avoir des résultats plus stables. Sur des données exactement formattées comme les données d'apprentissage (fichier "numbers_test.txt"), nous avons une précision de prédiction de 90%.
+
+     Vous pouvez cependant travailler sur vos propres images. Pour cela, il suffit de donner en argument à l'executable les noms des fichiers sur lesquels vous voulez travailler. Certains critères de creation d'image étant important, nous vous conseillons :
+     - de dessiner des chiffres totalement blanc sur un fond totalement noir.
+     - que la taille de l'image fasse 500*500 pixels avec une épaisseur de trait entre 65 et 70 (ou un changement proportionnel de ces critères).
+     - que l'image soit en format ".ppm" (brut et non ascii).
